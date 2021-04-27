@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="108dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="S"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toBottomOf="@+id/tvSize" />
+
+    <ImageButton
+        android:id="@+id/btnCong"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="7dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/tvQuantity"
+        app:layout_constraintStart_toEndOf="@+id/tvQuantity"
+        app:layout_constraintTop_toTopOf="@+id/tvQuantity"
+        app:srcCompat="@drawable/cong" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="24dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTru"
+        app:layout_constraintStart_toEndOf="@+id/btnTru"
+        app:layout_constraintTop_toTopOf="@+id/btnTru" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnTru"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="88dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSize"
+        app:layout_constraintStart_toEndOf="@+id/tvSize"
+        app:layout_constraintTop_toTopOf="@+id/tvSize"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tru" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
