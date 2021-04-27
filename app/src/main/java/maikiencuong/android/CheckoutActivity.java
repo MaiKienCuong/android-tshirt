@@ -29,7 +29,7 @@ public class CheckoutActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             Product product = (Product) bundle.getSerializable("product");
-//            products= (ArrayList<Product>) bundle.getSerializable("products");
+            products= (ArrayList<Product>) bundle.getSerializable("products");
             products.add(product);
         }
 
